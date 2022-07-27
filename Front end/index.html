@@ -1,51 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factual - Front End</title>
-    <link rel="stylesheet" href="./Assets/style.css">
-</head>
-<body>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Factual</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./Assets/style.css">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
 
-    <header>
-        <img src="./Assets/img/logo de Reginaldo .png" class="logo">
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#" onclick="toggleMenu();">Sobre</a></li>
-            <li><a href="#" onclick="toggleMenu();">Serviços</a></li>
-            <li><a href="#" onclick="toggleMenu();">Nóticias</a></li>
-            <li><a href="#" onclick="toggleMenu();">Noviades</a></li>
-            <li><a href="#" onclick="toggleMenu();">Contato</a></li>
-        </ul>
-    </header>
+        <!-- header -->
+        <header>
+            <div class = "navigation-container">
+                <div class = "top-head">
+                    <div class = "web-name">
+                        <h1>Factual</h1>
+                    </div>
 
-        <div class="main-menu">
-            <img class="not" src=""
-            <p class="main-news__description">
-                <a href="#">
-                    Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                </a>
-            </p>
-        </div>
+                    <div class = "ham-btn">
+                        <span>
+                            <i class = "fas fa-bars"></i>
+                        </span>
+                    </div>
+
+                    <div class = "times-btn">
+                        <span>
+                            <i class = "fas fa-times"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- nav bar -->
+
+                <div class = "nav-bar" id = "nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href = "#">Cidade</a></li>
+                            <li><a href = "#">Sergipe</a></li>
+                            <li><a href = "#">Brasil</a></li>
+                            <li><a href = "#">Saúde</a></li>
+                            <li><a href = "#">Educação</a></li>
+                            <li><a href = "#">Política</a></li>
+                            <li><a href = "#">Economia</a></li>
+                            <li><a href = "#">Fotos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--social icons -->
+                <div class = "social-icons">
+                    <ul>
+                        <li>
+                            <a href= "#"><i class = "fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href= "#"><i class = "fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href= "#"><i class = "fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href= "#"><i class = "fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class = "banner">
+            <div class = "banner-main-content">
+                <h2>Tenha as melhores notícias</h2>
+                <h3>Factual, trazendo o jornalismo até você!</h3>
+
+                <button>
+                    <a href = "#">Saiba mais</a>
+                </button>
+
+                <div class = "current-news-head">
+                    <h2>Mais Lidas</h2>
+                    <h3>Polícia localiza carro de ex-jogador que teve fazenda invadida e foi espancado em Estância <span>Reginaldo</span></h3>
+
+                    <h3>IPCA: Inflação foi de 0,74% em Aracaju no mês de maio <span>João Pedro</span></h3>
+
+                    <h3>COPE prende dois homens por tráfico de drogas no Recanto Verde, em Estância <span>Flávio Rocha</span></h3>
+                    Acusado de três homicídios no bairro Soledade é preso em flagrante
+                    <span>Reginaldo</span></h3>
+                </div>
+            </div>
+
+            <div class = "banner-sub-content">
+                <div class = "hot-topic">
+                    <img src = "./Assets/img/banner-news-1.jpg" alt = "">
+
+                    <div class = "hot-topic-content">
+                        <h2>Estância: Ex-jogador de futebol tem fazenda invadida no Povoado Queimadas</h2>
+                        <p>A fazenda do ex-jogador de futebol Hamilton foi alvo de assaltantes no Povoado Queimadas, em Estância, na noite desta terça-feira (21).</p>
+                        <a href = "#">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class = "hot-topic">
+                    <img src = "./Assets/img/banner-news-2.jpg" alt = "">
+
+                    <div class = "hot-topic-content">
+                        <h2>Prefeitura de Estância abre licitação para aquisição de materiais e equipamentos para GME</h2>
+                        <p>O Município de Estância, através da Secretaria Municipal da Defesa Social e Cidadania , por intermédio do seu Pregoeiro, designado pela Portaria nº. 158/2022 torna público...</p>
+                        <a href = "#">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class = "hot-topic">
+                    <img src = "./Assets/img/banner-news-3.jpg" alt = "">
+
+                    <div class = "hot-topic-content">
+                        <h2>Suspeito de tráfico de drogas morre em confronto em Simão Dias</h2>
+                        <p>Policiais do Grupamento Especial Tático de Motos (Getam) apreenderam um revólver e drogas no Povoado Canafistula, município de Simão Dias.</p>
+                        <a href = "#">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class = "hot-topic">
+                    <img src = "./Assets/img/banner-news-4.jpg" alt = "">
+
+                    <div class = "hot-topic-content">
+                        <h2>Sobe para 121 o número de mortos em enchentes em Pernambuco</h2>
+                        <p>Subiu para 121 o número de mortes em decorrência das chuvas em Pernambuco desde 25 de maio. Nesta quarta-feira, 1º, o Corpo de Bombeiros localizou mais cinco vítimas dos temporais.</p>
+                        <a href = "#">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <main>
+            <section class = "main-container-left">
+                <h2>Nossos Apoiadores</h2>
+                <div class = "container-top-left">
+                    <article>
+                        <a href="https://www.margieducation.com/todosgratuitos"><img src = "./Assets/img/Banner-São João.png"></a>
+                    </article>
+                </div>
+
+                <div class = "container-bottom-left">
+                        <img src = "./Assets/img/banner-ONAG.jpg">
+                        <img src = "./Assets/img/banner-clinica-jardim.gif">
+                        <img src = "./Assets/img/banner-ecoville.gif">
+                        <img src="./Assets/img/banner-acesso.net.jpg">
+                        <img src="./Assets/img/banner-cdl.jpg">
+                        <img src="./Assets/img/banner-coopercar.gif">
+                        <img src="./Assets/img/banner-limpomac.jpg">
+                        <img src="./Assets/img/banner-Felipe.jpg">
+                        <img src="./Assets/img/Banner-freedom.jpg">
+                </div>
+
+                <div class = "container-top-left">
+                    <article>
+                        <a href="https://www.margieducation.com/todosgratuitos"><img src = "./Assets/img/banner-guanabara.gif"></a>
+                    </article>
+                </div>
+            </section>
+
+            <section class = "main-container-right">
+                <h2>Destaques da Semana</h2>
+                
+                <article>
+                    <h4>Novo</h4>
+                    <div>
+                        <h2>Sergipe registra 41 casos conhecidos de Covid-19</h2>
+
+                        <p>De acordo com o boletim epidemiológico estadual, divulgado pelo Conselho Nacional de Secretários de Saúde (Conass)...</p>
+
+                        <a href = "#">Leia mais <span>>></span></a>
+                    </div>
+                    <img src = "./Assets/img/banner-vacina.jpeg">
+                </article>
+
+                <article>
+                    <h4>Novo </h4>
+                    <div>
+                        <h2>Eleitas as rainhas adultas, mirim e kids do São João de Estância</h2>
+
+                        <p>Os festejos juninos de Estância, tem como diferencial a realização dos concursos juninos. Um dos mais aguardados é o da escolha da Rainha do São João.</p>
+
+                        <a href = "#">Leia mais <span>>></span></a>
+                    </div>
+                    <img src = "./Assets/img/banner-rainha-SJ.jpg">
+                </article>
+
+                <article>
+                    <h4>Novo </h4>
+                    <div>
+                        <h2>Homem que teve casa invadida e levou vários tiros morre horas depois no HRE</h2>
+
+                        <p>O município de Estância registrou hoje, domingo, 8 de Maio, mais um crime de homicídio por arma de fogo.</p>
+
+                        <a href = "#">Leia mais <span>>></span></a>
+                    </div>
+                    <img src = "./Assets/img/banner-arma de fogo.jpg">
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class = "footer-container">
+                <div class = "footer-left">
+                    <img src="./Assets/img/logoMargi.png" alt="">
+                </div>
+
+                <div class = "footer-right">
+                    <h2>Newletter</h2>
+                    <p>Assine nossa news letter para receber nossas <br> 
+                        notícias de primeira mão!</p>
     
+                    <div>
+                        <input type = "text" placeholder = "Email">
+                        <i class = "fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
 
+            <br>
+            <p>Copyright &copy; 2022 All rights reserved | Factual</p>
+        </footer>
 
-         <script type="text/javascript">
-            window.addEventListener('scroll', function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-            });
-
-            function toggleMenu(){
-            var menuToggle = document.querySelector('.toggle');
-            var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active');
-            }
-        </script>
-
-</body>
-
+        <script src="script.js" async defer></script>
+    </body>
 </html>
