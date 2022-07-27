@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factual - Front End</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./Assets/img/logo de Reginaldo .png" class="logo">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#" onclick="toggleMenu();">Sobre</a></li>
+            <li><a href="#" onclick="toggleMenu();">Serviços</a></li>
+            <li><a href="#" onclick="toggleMenu();">Nóticias</a></li>
+            <li><a href="#" onclick="toggleMenu();">Noviades</a></li>
+            <li><a href="#" onclick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+
+        <div class="main-menu">
+            <img class="not" src=""
+            <p class="main-news__description">
+                <a href="#">
+                    Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+                </a>
+            </p>
+        </div>
+    
+
+
+         <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+            }
+        </script>
+
+</body>
+
+</html>
