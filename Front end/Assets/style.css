@@ -315,12 +315,14 @@ main a:hover{
 }
 
 .container-bottom-left{ 
-    margin: 15px 30px;
+    margin: 10px 10px 0 80px;
     flex-direction: row;
+    justify-content: center;
+    padding: 0;
 }
 
 .container-bottom-left img{
-    width: 90%;
+    width: 80%;
     padding: 10px;
 }
 
@@ -564,8 +566,8 @@ footer > p{
     }
 
     .container-bottom-left{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     
 }
